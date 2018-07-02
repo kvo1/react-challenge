@@ -1,0 +1,107 @@
+@import '_globals';
+
+html, body {
+  background: #f2709c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff9472, #f2709c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff9472, #f2709c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: $primaryFont;
+  font-size: $primaryFontSize;
+  height: 100%;
+  overflow: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $primaryFont;
+}
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+.center { text-align: center; }
+.full-width { width: 100%; }
+.pull-left { float: left; }
+.pull-right { float: right; }
+
+.noMargin { margin: 0px!important; }
+.noMargin-top { margin-top: 0px!important; }
+.noMargin-bottom { margin-bottom: 0px!important; }
+.noMargin-left { margin-left: 0px!important; }
+.noMargin-right { margin-right: 0px!important; }
+
+.noPadding { padding: 0px!important; }
+.noPadding-top { padding-top: 0px!important; }
+.noPadding-bottom { padding-bottom: 0px!important; }
+.noPadding-left { padding-left: 0px!important; }
+.noPadding-right { padding-right: 0px!important; }
+
+.noBorder-right { border-right: none!important; }
+
+.app-bg {
+  background-color: $green;
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
+.app-root {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.app-home-wrapper {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.app-home-container {
+  margin: 0px;
+  padding: 0px;
+}
+.home-main-wrapper {
+  background: $white-light;
+  border: 1px solid $white;
+  border-radius: 20px;
+  height: 600px;
+  margin: 0px;
+  padding: 10px;
+  position: absolute;
+  top: 15%;
+  width: 450px;
+}
+.home-title > h1 {
+  color: $pink;
+  font-size: $primaryFontSize;
+  font-weight: 600;
+  margin: 0px;
+}
+.home-title > h2 {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px 0 0px;
+}
+.home-description {
+  margin: 0px;
+  padding: 30px;
+}
+.home-description > p {
+  color: $gray-dark;
+  font-size: 18px;
+  margin: 80px 30px;
+}
+.home-control > button {
+  background-color: $pink;
+  color: $white;
+}
+
+// Import all child components style
+@import '_components';

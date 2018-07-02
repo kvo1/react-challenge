@@ -1,0 +1,11 @@
+{
+  "watch": [
+    "nodemon.json",
+    "package.json",
+    "webpack.config.js",
+    ".eslintrc",
+    ".eslintignore",
+    ".babelrc"
+  ],
+  "ext": "js json css scss"
+}

@@ -1,0 +1,35 @@
+{
+  "presets": [
+    [
+      "latest",
+      {
+        "es2017": {
+          "modules": false
+        }
+      }
+    ],
+    "react",
+    "react-hmre",
+    "stage-0"
+  ],
+  "env": {
+    "development": {
+      "plugins": ["react-loadable/babel", ["react-transform", {
+        "transforms": [{
+          "transform": "react-transform-hmr",
+          "imports": ["react"],
+          "locals": ["module"]
+        }]
+      }]]
+    },
+    "production": {
+      "plugins": ["react-loadable/babel", ["react-transform", {
+        "transforms": [{
+          "transform": "react-transform-hmr",
+          "imports": ["react"],
+          "locals": ["module"]
+        }]
+      }]]
+    }
+  }
+}
