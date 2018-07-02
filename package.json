@@ -43,6 +43,7 @@
     "chalk": "^2.3.0",
     "compression": "^1.7.1",
     "env-cmd": "^8.0.1",
+    "gh-pages": "^1.2.0",
     "history": "^4.7.2",
     "immutable": "^3.8.1",
     "less-loader": "^4.1.0",
