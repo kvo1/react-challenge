@@ -23,3 +23,7 @@ In the project folder, run:
 ### Run on Development Environment
 In the project folder, run:
 ### `npm run start:dev`
+
+### Access on the web
+
+### `http://localhost:3000`
