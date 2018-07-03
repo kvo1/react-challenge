@@ -1,6 +1,5 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-// import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import LoadableVisibility from 'react-loadable-visibility/react-loadable';
 import Loading from './common/components/Loading';
 
