@@ -45,7 +45,6 @@ if (NODE_ENV !== 'production') {
   const fs = devMiddleware.fileSystem;
 
   // Send index.html when root url is requested
-  console.log(path.join(process.cwd(), '/public/index.html'));
   app.get('*', (request, response) => {
     fs.readFile(path.join(process.cwd(), '/public/index.html'), (error, file) => {
       (error) ? response.sendStatus(404) : response.send(file.toString());
